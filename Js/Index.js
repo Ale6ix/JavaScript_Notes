@@ -114,9 +114,339 @@ console.log(typeof verdadero, typeof falso);
 
 /* NULL, UNDEFID & NaN */
 
-let indefinida;
+/* let indefinida;
 let nulo = null;
 let nada = "Hola" * 3.7;
 console.log(indefinida);
 console.log(nulo);
-console.log(nada);
+console.log(nada); */
+
+/* FUNCTIONS */
+
+/* 
+Una funciones es un bloque de codigo, autocontenido que se puede definir una vez y ejecutar en cualquier momento Opcionalmente, una funcion puede aceptar parametros y devolver un valor
+
+Las funciones en JavaScript son objetos, un tipo especial de objetos: 
+
+Se dice que las funciones son ciudadanos de primera clase porque pueden pasarse como argumentos y usarse como valor de retorno. 
+*/
+
+/*  Declaradas */
+
+/* function estoEsUnaFunction() {
+  console.log("Uno");
+  console.log("Dos");
+  console.log("Tres");
+} */
+
+/* Invocacion de funciones */
+
+/* estoEsUnaFunction();
+estoEsUnaFunction();
+estoEsUnaFunction();
+estoEsUnaFunction();
+
+function unaFuncionQueDevuelveValor() {
+  console.log("Uno");
+  console.log("Dos");
+  console.log("Tres");
+  return "La funciones ha retornado una cadena de texto";
+  console.log("cuatro");
+  console.log("cinco");
+  console.log("seis");
+} */
+
+/* 
+Cuando una funcione, encuentra la palabra resevada return, ignora las lines de codigo que hay detras de ella. 
+*/
+
+// let valoDeFuncion = unaFuncionQueDevuelveValor();
+// console.log(valoDeFuncion);
+
+/* function saludar(nombre = "Desconocido", edad = 0) {
+  console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años`);
+}
+
+saludar("Alejandro", 21);
+saludar();
+
+funcionDeclarada();
+
+function funcionDeclarada() {
+  console.log(
+    "Esto es una funcion declarada, puede invocarse en cualquier parde del codigo; incluso antes de que la funcion sea declarada."
+  );
+}
+
+funcionDeclarada(); */
+
+/* EXPRESADAS */
+
+/* Esta tambien es una funcion anonima, puesto que no tiene Nombre */
+
+/* funcionExpresada(); */
+
+/* const funcionExpresada = function () {
+  console.log(
+    "Esto es una funcion expresada, es decir una funcion que se le a asignado como valor una variable, si invocamos esta funcion antes de su definicion, Js nos tirara ERROR"
+  );
+};
+
+funcionExpresada(); */
+
+/* 
+Para mejor practica es mejor usar una funcion expresada.
+*/
+
+/* ARRAY */
+
+/* const a = [];
+console.log(a);
+
+const frutas = ["manzana", "pera", "sandia"];
+console.log(frutas);
+
+const arregloDentroDeOtro = [1, "Hola", ["a", "b"]];
+console.log(arregloDentroDeOtro);
+console.log(arregloDentroDeOtro.length);
+ */
+// Navegar dentro del arreglo
+
+/* console.log(arregloDentroDeOtro[1]);
+console.log(arregloDentroDeOtro[2][1]);
+
+const b = Array.of("X", "Y", "Z", 9, 8, 7);
+console.log(b);
+
+const c = Array(100).fill(false);
+console.log(c);
+
+const colores = ["Rojo", "Verde", "Azul"];
+console.log(colores);
+
+colores.forEach(function (el, index) {
+  console.log(`<li id="${index}">${el}</li>`);
+});
+ */
+
+/* OBJECTS */
+
+// const objeto = {};
+// console.log(objeto);
+
+/* 
+Dentro de un objeto a las variables se le van a llamar atributos/propiedades y a las funciones se les llama metodos
+*/
+
+/* const alex = {
+  nombre: "Bryan",
+  apellido: "Fuentes",
+  edad: 21,
+  pasatiempos: ["Entrenar", "Estudiar", "VideoGames"],
+  soltero: true,
+  contactos: {
+    email: "branmon35@gmail.com",
+    twiter: "@AlejandroFuentes",
+    movil: "52 8138123456",
+  },
+  saludar: function () {
+    console.log(
+      /* 
+      La palabra this de una funcion se comporta un poco diferente en comparacion con otros lenguajes. Ademas tiene algunas diferencias entre el mosoestricto y el modo no estricto.
+
+      si quieres mas informacion visitar: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Operators/this
+      */
+/*      `Hola mi nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad} años`
+    );
+  },
+};
+
+console.log(alex);
+console.log(alex.nombre);
+console.log(alex.contactos);
+alex.saludar();
+ */
+
+/* TIPOS DE DATOS */
+
+/* 
+Operadores Aritmeticos: +, -, *, /, %. 
+*/
+
+// let a = 10000 + 5 - (20 * 2) / 2;
+// console.log(a);
+
+/* 
+OPERADORES RELACIONALES: <, =, >, <=, >=, ==, ===, !=,!==  
+*/
+
+/* console.log(5 < 10);
+console.log(5 <= 2);
+console.log(5 > 20);
+console.log(5 >= 1);
+console.log(5 >= 1);
+ */
+/* 
+= 1 igual es asignacion
+== 2 iguales es comparación de valores
+=== 3 iguales es comparacion de valores y tipo de dato.
+*/
+
+/* console.log(7 == 7);
+console.log("7" == 7);
+console.log("7" === 7);
+*/
+
+/* INCREMENTO Y DECREMENTO */
+
+// let i = 5;
+
+// i += 1;
+
+// operador unario
+// i++;
+
+// console.log(i);
+
+// let b = 5;
+
+// b -= 1;
+
+// operador unario
+// b--;
+
+// console.log(b);
+
+/*
+OPERADORES LOGICOS: }
+1.-&& AND: Cuando tenga una o mas condiciones se vuelve verdadesero cuando todas sean verdadero 
+2.-|| OR: Cuando tenga una o mas condiciones se vuelve verdadesero cuando unde de esas sea verdadero 
+3-! NOT: Niega, es decir lo que es verdadero lo vuelve falso y viceversa 
+*/
+
+/* console.log(!true);
+console.log(!false);
+console.log(1 === 1 || "1" === 1);
+console.log(1 === 1 && "2" === 2);
+ */
+
+/* CONDICIONALES */
+
+/* if-else */
+/* 
+const estoEsUnIf = function (edad) {
+  if (edad >= 18) {
+    console.log(`Hola tienes la edad de ${edad}  puedes pasar`);
+  } else {
+    console.log(`Hola tienes la edad de ${edad}  no puedes pasar`);
+  }
+};
+
+estoEsUnIf(12);
+ */
+/* if-else if */
+
+/* 
+Dejame dormir 0hrs - 5hrs
+Buenos dias 6hrs - 11hrs.
+Buenas tardes 12hrs - 18hrs
+Buenas noches 19hrs - 23hrs 
+*/
+
+/* const ifAninado = function (hora = 0) {
+  if (hora >= 0 && hora <= 5) {
+    console.log("Dejame dormir");
+  } else if (hora >= 6 && hora <= 11) {
+    console.log("Buenos dias");
+  } else if (hora >= 12 && hora <= 18) {
+    console.log("Buenas tardes");
+  } else if (hora >= 19 && hora <= 23) {
+    console.log("Buenas tardes");
+  }
+};
+ifAninado(12); */
+
+/* switch case */
+
+/* 
+Domingo = 0
+Lunes = 1
+Martes = 2
+Miercoles = 3
+Jueeves = 4
+Viernes = 5
+Sabado = 6
+*/
+/* 
+const diaDeLaSemana = function (dia = 0) {
+  switch (dia) {
+    case 0:
+      console.log("Hoy es domingo");
+      break;
+    case 1:
+      console.log("Hoy es lunes");
+      break;
+    case 2:
+      console.log("Hoy es martes");
+      break;
+    case 3:
+      console.log("Hoy es miercoles");
+      break;
+    case 4:
+      console.log("Hoy es jueves");
+      break;
+    case 5:
+      console.log("Hoy es viernes");
+      break;
+    case 6:
+      console.log("Hoy es sabado");
+      break;
+    default:
+      console.log(
+        "El numero ingresado no esta disponible, vuelva a escoger un numero de 0 a 6"
+      );
+      break;
+  }
+};
+diaDeLaSemana(6);
+ */
+
+/* CICLOS(LOOPS) */
+
+/* while */
+
+/* let contador = 0;
+
+while (contador < 10) {
+  contador++;
+  console.log(contador);
+}
+
+/* Do while */
+/* do {
+  contador++;
+  console.log(contador);
+} while (contador < 10);
+ */
+
+for (i = 0; i <= 10; i++) {
+  console.log(i);
+}
+
+let numero = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+for (i = 0; i < numero.length; i++) {
+  console.log(numero[i]);
+}
+
+const alex = {
+  nombre: "Bryan",
+  apellido: "Fuentes",
+  edad: 21,
+};
+for (const key in alex) {
+  console.log(alex[key]);
+}
+console.log("forof");
+for (const i of numero) {
+  console.log(i);
+}
