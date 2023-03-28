@@ -96,4 +96,27 @@ console.log(lista2); */
 
 /* Numbers */
 
-let a = 2;
+/* let a = 2;
+let b = new Number(1);
+let c = 7.19;
+
+console.log(a, b);
+console.log(c.toFixed(1));
+ */
+
+/* BOOLEAN */
+/* 
+let verdadero = true;
+let falso = false;
+console.log(verdadero, falso);
+console.log(typeof verdadero, typeof falso);
+ */
+
+/* NULL, UNDEFID & NaN */
+
+let indefinida;
+let nulo = null;
+let nada = "Hola" * 3.7;
+console.log(indefinida);
+console.log(nulo);
+console.log(nada);
