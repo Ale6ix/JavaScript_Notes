@@ -591,3 +591,116 @@ numeros.forEach((el, index) => {
   console.log(`${el}, esta en la posicion ${index}`);
 });
  */
+
+/* PROTOTIPOS */
+
+/* 
+POO
+clases-Metodo a seguir
+  Objetos-Es una instancia de una clase
+    Atributos-Es una caracteristica o opropiedad del objeto-
+      Los atributos son variables dentro de un objeto
+    Metodos-Son las acciones que un objeto puede realizar
+      los metodos son funciones dentro de un objeto
+*/
+
+/* ESTO NO ES FUNCIONAL, PUES PORQUE HAY PEGAR Y COPIAR. */
+
+/* const animal = {
+  nombre: "Snooppy",
+  sonar() {
+    console.log("Hago sonidos porque estoy vivo");
+  },
+};
+const animal2 = {
+  nombre: "Lola Bunny",
+  sonar() {
+    console.log("Hago sonidos porque estoy vivo");
+  },
+};
+
+console.log(animal);
+console.log(animal2);
+ */
+
+// Funcion Constructora
+/* function Animal(nombre, genero) {
+  // Atributos
+  this.nombre = nombre;
+  this.genero = genero;
+}
+// Metodos
+Animal.prototype.sonar = function () {
+  console.log("Hago sonido porque estoy vivo");
+}; */
+
+/* Herencia prototipica */
+/* function Perro(nombre, genero, tamanio) {
+  this.super = Animal;
+  this.super(nombre, genero);
+  this.tamanio = tamanio;
+} */
+
+// Perro esta heredando de Animal.
+// Perro.prototype = new Animal();
+// Perro.prototype.constructor = Perro;
+// Sobreescritura de metodo del
+/* Perro.prototype.sonar = function () {
+  console.log("Mi sonido es un ladrido, porque soy un perro");
+};
+Perro.prototype.ladrar = function () {
+  console.log("wouf");
+};
+
+const snoppy = new Perro("Snoppy", "Macho", "Mediano"),
+  lolaBunny = new Animal("Lola Bunny", "Hembra");
+
+console.log(snoppy);
+snoppy.sonar();
+snoppy.ladrar();
+console.log(lolaBunny);
+ */
+
+/* Clases y Objetos */
+
+/* class Animal {
+  constructor(nombre, genero) { */
+// atributos
+//   this.nombre = nombre;
+//   this.genero = genero;
+// }
+// Metodos
+/*   sonar() {
+    console.log("Hago sonido porque estoy vivo");
+  }
+  saludar() {
+    console.log(`Hola mi nombre es ${this.nombre}`);
+  }
+}
+
+class Perro extends Animal {
+  constructor(nombre, genero, tamanio) { */
+// Con el metodo super se manda a llamar el constructor de la clase padre
+/*     super(nombre, genero);
+    this.tamanio = tamanio;
+  }
+  sonar() {
+    console.log("Mi sonido es un ladrido");
+  }
+  ladrar() {
+    console.log("Wouf");
+  }
+}
+
+const mimi = new Animal("Mimi", "Hembra"),
+  scobby = new Perro("Scobby", "Macho", "Gigante");
+
+console.log(mimi);
+console.log(scobby);
+
+mimi.sonar();
+mimi.saludar();
+scobby.sonar();
+scobby.saludar();
+scobby.ladrar();
+ */
