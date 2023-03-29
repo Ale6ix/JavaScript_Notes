@@ -429,7 +429,7 @@ while (contador < 10) {
 } while (contador < 10);
  */
 
-for (i = 0; i <= 10; i++) {
+/* for (i = 0; i <= 10; i++) {
   console.log(i);
 }
 
@@ -450,3 +450,144 @@ console.log("forof");
 for (const i of numero) {
   console.log(i);
 }
+ */
+
+/*Manejo de errores */
+
+/* try {
+  console.log("En el try se agrega se agrega el codigo a evaluar");
+} catch (error) {
+  console.log("Catch, captura cualquier error surgido o lanzado en el try");
+} finally {
+  console.log("EL bloque del finally se ejecutara siempre, tenga o no error");
+}
+ */
+/* ERROR PERSONALIZADO */
+
+/* try {
+  let numero = 10;
+  if (isNaN(numero)) {
+    throw new Error("El caracter introducido no es un numero");
+  }
+  console.log(numero * numero);
+} catch (error) {
+  console.log("Se produjo el siguiente error: " + error);
+}
+ */
+
+/* break and continue */
+
+/* const numero = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+for (let i = 0; i < numero.length; i++) {
+  if (i % 2 === 0) {
+    continue;
+  } else {
+    console.log(numero[i]);
+  }
+}
+ */
+
+/* Destructuracion */
+
+/* Sin destructuracion */
+/* const numero = [1, 2, 3];
+let uno = numero[0],
+  dos = numero[1],
+  tres = numero[2];
+console.log(uno, dos, tres);
+
+/* Con destructuracion */
+/* let [one, two, three] = numero;
+console.log(one, two, three);
+
+const pet = {
+  name: "Milka",
+  age: 4,
+  breed: "standfordshire-Bullterrier",
+}; */
+/* Es importante que al imprimir los datos los nombres del objeto y los nombres de destructuracion sean iguales */
+// let { name, age, breed } = pet;
+// console.log(`Name: ${name} | Age: ${age} | Breed: ${breed}`);
+
+/* Parametros REST y Operador */
+
+/* Parametro REST */
+
+/* function sumar(a, b, ...c) {
+  let resultado = a + b;
+  c.forEach(function (n) {
+    resultado += n;
+  });
+  return resultado;
+}
+console.log(sumar(1, 2));
+console.log(sumar(1, 2, 3));
+console.log(sumar(1, 2, 3, 4));
+console.log(sumar(1, 2, 3, 4, 5));
+console.log(sumar(1, 2, 3, 4, 5, 6));
+console.log(sumar(1, 2, 3, 4, 5, 6, 7));
+console.log(sumar(1, 2, 3, 4, 5, 6, 7, 8));
+ */
+/* Operador */
+
+/* const arr = [1, 2, 3, 4, 5],
+  arr2 = [6, 7, 8, 9, 0];
+console.log(arr, arr2);
+const arr3 = [arr, arr2],
+  arr4 = [...arr, ...arr2];
+console.log(arr3);
+console.log(arr4);
+ */
+
+/* ARROW FUNCTIONS */
+
+// FUcncion anonima
+
+/* const saludar = function () {
+  console.log("Hola");
+}
+
+saludar();
+ */
+// Arrow
+
+/* const saludar2 = () => {
+  console.log("Hola");
+}
+
+saludar2();
+ */
+// Se puede quitar las llaves sis solo tiene una instruccion
+
+/* const saludar3 = () => console.log("Hola");
+
+saludar3(); */
+
+/* Cuando una funcion felcha recibe un solo parametro, no es necesario poner parentesis */
+
+/* const saludar4 = nombre => console.log(`Hola ${nombre}`);
+saludar4("Alejandro");
+ */
+
+/* Cuando una arrow function tiene variuas lineas de codigo, hay que respetar el cuerpo de la funcion */
+/* 
+const sumaREST = (a, b, ...c) => {
+  let resultado = a + b;
+  c.forEach(function (n) {
+    resultado += n;
+  });
+  return resultado;
+};
+console.log(sumaREST(1, 2));
+console.log(sumaREST(1, 2, 3, 4));
+console.log(sumaREST(1, 2, 3, 4, 5));
+console.log(sumaREST(1, 2, 3, 4, 5, 6));
+console.log(sumaREST(1, 2, 3, 4, 5, 6, 7));
+console.log(sumaREST(1, 2, 3, 4, 5, 6, 7, 8));
+ */
+
+/* const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+numeros.forEach((el, index) => {
+  console.log(`${el}, esta en la posicion ${index}`);
+});
+ */
