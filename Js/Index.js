@@ -704,3 +704,61 @@ scobby.sonar();
 scobby.saludar();
 scobby.ladrar();
  */
+
+/* Metodos estaticos 
+Un metodo estatico se puede ejecutar sin necesidad de instanciar la clase  
+*/
+
+/* OBJETO DATE */
+
+/* console.log(Date());
+
+let fecha = new Date();
+console.log(fecha);
+// dia del mes
+console.log(fecha.getDate());
+// Representa el dia de la semana
+console.log(fecha.getDay());
+// Representa el mes del 0 al 11.
+console.log(fecha.getMonth());
+//El año
+console.log(fecha.getYear());
+// El año
+console.log(fecha.getFullYear());
+// La hora
+console.log(fecha.getHours());
+// Minutos
+console.log(fecha.getMinutes());
+// Seconds
+console.log(fecha.getSeconds()); */
+// Milisegundos
+/* console.log(fecha.getMilliseconds());
+console.log(fecha.toString());
+console.log(fecha.toDateString());
+console.log(fecha.toLocaleString());
+console.log(fecha.toLocaleDateString());
+console.log(fecha.toLocaleTimeString());
+console.log(fecha.getTimezoneOffset());
+console.log(fecha.getUTCDate());
+console.log(fecha.getUTCHours());
+console.log(Date.now()); */
+/* Libreria importante a checar:
+Moment.js */
+// let cumpleAlex = new Date(2002, 2, 17);
+// console.log(cumpleAlex);
+
+/* Objeto Math */
+
+/* console.log(Math);
+console.log(Math.PI);
+console.log(Math.abs(7.8));
+console.log(Math.ceil(7.2));
+console.log(Math.floor(7.4));
+console.log(Math.round(7.7));
+console.log(Math.sqrt(9));
+console.log(Math.pow(2, 9));
+console.log(Math.sign(-7.8)); // -1 || 1
+console.log(Math.random());
+console.log(Math.random() * 1000);
+console.log(Math.round(Math.random() * 1000));
+ */
