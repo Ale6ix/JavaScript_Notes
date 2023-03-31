@@ -762,3 +762,56 @@ console.log(Math.random());
 console.log(Math.random() * 1000);
 console.log(Math.round(Math.random() * 1000));
  */
+
+/* 
+Expreciones Regulares 
+  Son una secuencia de caracteres que forman un patron de busqueda, principalmente utilizada para la busqueda de patrones de cadena de caracteres.
+
+  https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Regular_Expressions
+*/
+/* 
+let cadena =
+  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam dolorum nesciunt consequuntur, perferendis facilis saepe molestias repellendus exercitationem eveniet quo rem quia at harum eos dicta ut explicabo aperiam. Natus! lorem";
+
+let expReg2 = /lorem/gi;
+
+console.log(expReg2.test(cadena));
+console.log(expReg2.exec(cadena));
+ */
+
+/* Funciones anonimas autoejecutadas */
+
+// Cuerpo de una funcion anonima autoejecutable
+
+/* (function () {
+  console.log("Mi primer IIFE");
+})();
+(function (d, w, c) {
+  console.log("Mi segunda IIFE");
+  c.log("Hola");
+  c.log(w);
+  c.log(d);
+})(document, window, console);
+
+// Formas de escribir estas funciones
+
+// clasica
+(function () {
+  console.log("Clasica");
+})();
+
+// La Crockford
+(function () {
+  console.log("Crockford");
+})();
+
+// Unaria
+/* +function () {
+  console.log("Unaria");
+}(); */
+
+// !function () {
+//   console.log("Facebook");
+// };
+
+/* import y export */
