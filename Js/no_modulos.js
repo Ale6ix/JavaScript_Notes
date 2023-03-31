@@ -1,1 +1,1 @@
-console.log("Este archivo no soporta ECS6");
+// console.log("Este archivo no soporta ECS6");
