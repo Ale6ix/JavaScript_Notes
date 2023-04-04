@@ -262,8 +262,6 @@
 // calcularAnios(new Date(1000, 0, 1));
 // calcularAnios(new Date(2050, 0, 1));
 
-/* ---------Ejercicio 17----------- */
-
 /* ---------Ejercicio 18----------- */
 /* ---------Ejercicio 19----------- */
 /* ---------Ejercicio 20----------- */

@@ -815,3 +815,22 @@ console.log(expReg2.exec(cadena));
 // };
 
 /* import y export */
+const expReg = (cadena = "") => {
+  if (!cadena) console.warn("No ingresaste ninguna cadena");
+  if (typeof cadena !== "string") return console.warn("No es un caracter");
+
+  let vocales = 0;
+  let consonantes = 0;
+  cadena = cadena.toLocaleLowerCase;
+
+  for (let letra of cadena) {
+    if (/[aeiouáéíóúü]/.test(letra)) vocales++;
+    if (/[bcdfghjknmlñpqrstvxyz]/.test(letra)) consonantes++;
+  }
+  return console.info({
+    cadena,
+    vocales,
+    consonantes,
+  });
+};
+expReg("Hola mundo");
