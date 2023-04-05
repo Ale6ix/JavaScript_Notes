@@ -263,5 +263,66 @@
 // calcularAnios(new Date(2050, 0, 1));
 
 /* ---------Ejercicio 18----------- */
+// const contarLetras = (words = "") => {
+//   if (!words) console.warn("No ingresaste ninguna cadena");
+//   if (typeof words !== "string")
+//     return console.error(
+//       `La cadena ${words} que ingresaste no es una cadena de texto.`
+//     );
+//   let vocales = 0,
+//     consonantes = 0;
+//   for (let letra of words) {
+//     if (/[aeiouáéíóúü]/i.test(letra)) vocales++;
+//     if (/[bcdfghjknmlñpqrstvxyz]/i.test(letra)) consonantes++;
+//   }
+//   return console.log({
+//     words,
+//     vocales,
+//     consonantes,
+//   });
+// };
+// contarLetras();
+// contarLetras(990);
+// contarLetras("HOLA MUNDO");
+// contarLetras("hola mundo");
+// contarLetras("úÚ");
 /* ---------Ejercicio 19----------- */
+
+// const validarNombre = function (nombre = "") {
+//   if (!nombre) return console.warn("No ingresaste tu nombre");
+//   if (typeof nombre !== "string")
+//     return console.error(`el nombre ingresado ${nombre} no es un string`);
+
+//   let expReg = /^[A-Za-zñÑÁÉÍÓÚ\s]+$/g.test(nombre);
+//   return expReg
+//     ? console.log(`Exprecion regular valida tu nombre es ${nombre}`)
+//     : console.error("Exprecion regular no valida");
+// };
+
+// validarNombre();
+// validarNombre(1906455);
+// validarNombre("1906455");
+// validarNombre("Bryan");
+// validarNombre("Alex");
 /* ---------Ejercicio 20----------- */
+// const elevarunArray = (array = undefined) => {
+//   if (array == undefined) return console.warn("No has ingresado los numero");
+//   if (!(array instanceof Array))
+//     return console.warn("No has ingresado un array");
+//   if (array.length == 0) return console.warn("No has ingresado un array");
+
+//   for (let num of array) {
+//     if (typeof num !== "number") return "no ingresaste numeros";
+//   }
+//   const newArray = array.map((el) => el * el);
+//   return console.info(
+//     `El arreglo antes ingresado ${array} ahora se elevo al cuadrado y resulto en ${newArray}`
+//   );
+// };
+// elevarunArray();
+// elevarunArray("hola mundfo");
+// elevarunArray(1);
+// elevarunArray([1, 2, 3]);
+// elevarunArray([
+//   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+// ]);
