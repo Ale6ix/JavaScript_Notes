@@ -326,3 +326,44 @@
 // elevarunArray([
 //   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 // ]);
+
+/* ---------Ejercicio 21----------- */
+const arrVmax = (arr = undefined) => {
+  if (arr == undefined) return console.warn("No has ingresado los numero");
+  if (!(arr instanceof Array)) return console.warn("No has ingresado un array");
+  if (arr.length == 0) return console.warn("No has ingresado un array");
+  for (let num of arr) {
+    if (typeof num !== "number") return "no ingresaste numeros";
+  }
+  return console.info(
+    `Arreglo original: ${arr} | valor maximos del arreglo: ${Math.max(
+      ...arr
+    )} | valor minimo del arreglo: ${Math.min(...arr)}`
+  );
+};
+// arrVmax();
+// arrVmax("hola");
+// arrVmax([1, 2, 3, 4, 5]);
+
+/* ---------Ejercicio 22----------- */
+const arrParImpar = (arry = undefined) => {
+  if (arry == undefined) return console.warn("No has ingresado los numero");
+  if (!(arry instanceof Array))
+    return console.warn("No has ingresado un array");
+  if (arry.length == 0) return console.warn("No has ingresado un array");
+  for (let num of arry) {
+    if (typeof num !== "number") return "no ingresaste numeros";
+  }
+  return console.info({
+    pares: arry.filter((num) => num % 2 === 0),
+    impares: arry.filter((num) => num % 2 === 1),
+  });
+};
+// arrParImpar();
+// arrParImpar([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]);
+
+/* ---------Ejercicio 23----------- */
+class Pelicula {
+  constructor(id, titulo, director, )
+}
+/* ---------Ejercicio 24----------- */
